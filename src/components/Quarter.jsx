@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { fetchProducts } from "../store/products-slice";
+import { fetchProducts } from "../store/Products-slice";
 import { motion } from "framer-motion";
 import {  FaStar } from "react-icons/fa";
 import { MdAttachMoney } from "react-icons/md";
