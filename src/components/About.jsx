@@ -4,7 +4,7 @@ import { FaCoffee, FaSmileBeam, FaLeaf } from "react-icons/fa";
 
 function About() {
     return (
-        <div className="bg-custom-bg min-h-screen bg-cover bg-center px-6 py-16 flex items-center justify-center">
+        <div className="bg-custom-bg min-h-screen object-contain bg-center px-6 py-16 flex items-center justify-center">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
                 {/* الصورة */}

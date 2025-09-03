@@ -11,13 +11,13 @@ function Home() {
     }
 
     const { pathname } = useLocation();
-      useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
-      }, [pathname]);
-    
+    }, [pathname]);
+
 
     return (
-        <div className="bg-custom-bg min-h-screen bg-cover bg-center flex flex-col items-center px-4 py-10">
+        <div className="bg-custom-bg min-h-screen object-contain bg-center flex flex-col items-center px-4 py-10">
             {/* الصورة والعنوان */}
             <motion.img
                 initial={{ opacity: 0, y: -50 }}
@@ -29,13 +29,14 @@ function Home() {
             />
 
             <motion.h1
-                className="text-4xl text-white h-[80px] w-fit bg-[#2e1410] px-6 py-2 rounded-3xl shadow-neutral-900 flex items-center gap-3 mb-16"
+                className="text-3xl sm:text-4xl md:text-5xl text-white w-fit bg-[#2e1410] px-6 py-2 rounded-3xl shadow-neutral-900 flex items-center gap-3 mb-16"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
                 <FaCoffee className="text-yellow-400" /> Some of Products <FaCoffee className="text-yellow-400" />
             </motion.h1>
+
 
             {/* الكروت */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">

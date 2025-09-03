@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { fetchProducts } from "../store/products-slice";
+import { fetchProducts } from "../store/Products-slice";
 import { motion } from "framer-motion";
 import {  FaStar } from "react-icons/fa";
 import { MdAttachMoney } from "react-icons/md";
@@ -36,7 +36,7 @@ function Half() {
     );
 
   return (
-    <div className="bg-custom-bg min-h-screen bg-cover bg-center px-6 py-10">
+    <div className="bg-custom-bg min-h-screen object-contain bg-center px-6 py-10">
       {/* Title with motion */}
       <motion.h1
         className="text-4xl text-white font-bold text-center mb-10 flex items-center justify-center gap-3"

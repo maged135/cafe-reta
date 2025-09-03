@@ -36,7 +36,7 @@ function Hot() {
     );
 
   return (
-    <div className="bg-custom-bg min-h-screen bg-cover bg-center px-6 py-10">
+    <div className="bg-custom-bg min-h-screen object-contain bg-center px-6 py-10">
       {/* Title with motion */}
       <motion.h1
         className="text-4xl text-white font-bold text-center mb-10 flex items-center justify-center gap-3"
